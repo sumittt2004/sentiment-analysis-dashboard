@@ -19,7 +19,7 @@ RUN pip install --no-cache-dir -r requirements.txt
 # Copy application files
 COPY app/ ./app/
 COPY config/ ./config/
-COPY .env .env
+
 
 # Create necessary directories
 RUN mkdir -p data/cache data/logs models
