@@ -1,0 +1,32 @@
+# Application Configuration
+app:
+  name: "Sentiment Analysis Dashboard"
+  version: "1.0.0"
+  secret_key: "your-secret-key-change-in-production"
+
+server:
+  host: "127.0.0.1"
+  port: 8050
+  debug: true
+
+authentication:
+  enabled: true
+  session_timeout: 3600  # 1 hour
+
+# Demo users (username: password)
+users:
+  admin: "admin123"
+  demo: "demo123"
+
+model:
+  name: "distilbert-base-uncased-finetuned-sst-2-english"
+  batch_size: 10
+  max_length: 512
+
+cache:
+  enabled: true
+  ttl: 3600
+
+logging:
+  level: "INFO"
+  directory: "./data/logs"
