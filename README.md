@@ -9,7 +9,7 @@
 A production-ready sentiment analysis dashboard that analyzes real-time news data using state-of-the-art AI models. Built with Python, Hugging Face Transformers, and Plotly Dash.
 
 <!-- Replace YOUR_GITHUB_USERNAME with your actual GitHub username -->
-**🌐 Live Demo:** [https://YOUR-APP-NAME.onrender.com](https://YOUR-APP-NAME.onrender.com)
+**💻 Demo:** Local deployment with Docker (Cloud deployment requires 6GB+ RAM due to transformer model)
 
 ## 📸 Screenshots
 
@@ -30,6 +30,24 @@ A production-ready sentiment analysis dashboard that analyzes real-time news dat
 
 ### Word Cloud Analysis
 ![Word Cloud](screenshots/Word%20Cloud.png)
+
+## 🎯 Project Highlights
+
+This project demonstrates:
+
+✅ **Full-Stack ML Development** - End-to-end AI application from data collection to visualization  
+✅ **Production-Ready Code** - Authentication, error handling, logging, caching  
+✅ **Modern ML Pipeline** - Hugging Face Transformers, batch processing, model optimization  
+✅ **Professional DevOps** - Docker containerization, environment management, CI/CD ready  
+✅ **Clean Architecture** - Modular design, separation of concerns, scalable structure  
+✅ **Real-World Application** - Solves actual business problem (brand monitoring, market research)  
+
+**Technical Challenges Solved:**
+- Transformer model integration and optimization
+- Real-time API data collection with rate limiting
+- Session-based authentication system
+- Docker deployment with large ML models
+- Interactive dashboard with multiple visualization types
 
 ## ✨ Features
 
@@ -224,6 +242,22 @@ docker-compose logs -f
 ```
 
 ## 🌐 Cloud Deployment
+
+**Note:** This application requires 6GB+ RAM and 4GB+ Docker image size due to the DistilBERT transformer model. Free tiers of most cloud platforms (Render, Railway, Heroku) have limitations:
+- Render Free: 512MB RAM limit
+- Railway Free: 4GB image size limit
+- Heroku Free: Deprecated
+
+**For production deployment, use:**
+- Render/Railway paid tier ($7-20/month)
+- AWS EC2 t3.medium or larger
+- Google Cloud Run with 4GB+ memory
+- Azure Container Instances
+
+**Alternative for free hosting:**
+- Use a smaller model (e.g., distilbert-base-uncased)
+- Deploy backend and frontend separately
+- Use model-as-a-service APIs
 
 ### Deploy to Render (Free)
 
